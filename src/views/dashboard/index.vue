@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard-container">
-    <div class="dashboard-text">name: {{ name }}</div>
+    <div class="dashboard-text">欢迎使用本系统, 请管理卫生间app后台</div>
   </div>
 </template>
 

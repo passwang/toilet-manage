@@ -1,24 +1,7 @@
-import request from '@/utils/request'
-
+import http from '@/utils/http'
 export function login(data) {
-  return request({
-    url: '/user/login',
-    method: 'post',
-    data
-  })
+  return http.post('/api/admin/login', data)
 }
-
-export function getInfo(token) {
-  return request({
-    url: '/user/info',
-    method: 'get',
-    params: { token }
-  })
-}
-
 export function logout() {
-  return request({
-    url: '/user/logout',
-    method: 'post'
-  })
+  return http.post('/api/user/logout')
 }
